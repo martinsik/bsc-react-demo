@@ -3,20 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/jest": "24.0.11",
-    "@types/node": "11.13.4",
-    "@types/react": "16.8.13",
-    "@types/react-dom": "16.8.4",
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.11.0",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8",
-    "typescript": "3.4.3"
+    "react-icons": "^2.2.7",
+    "react-intl": "^2.8.0",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "rxjs": "^6.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "npm run copy-locales && PORT=9000 npx react-scripts start",
+    "build": "npm run copy-locales && npx react-scripts build",
+    "test": "npx react-scripts test",
+    "test-e2e": "PORT=9001 npx react-scripts test src/e2e/*.ts",
+    "eject": "npx react-scripts eject",
+    "copy-locales": "node utils/copy-locales.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,5 +30,21 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/jest": "24.0.11",
+    "@types/node": "11.13.4",
+    "@types/puppeteer": "^1.12.3",
+    "@types/react": "16.8.13",
+    "@types/react-dom": "16.8.4",
+    "@types/react-intl": "^2.3.17",
+    "@types/react-router-dom": "^4.3.2",
+    "@types/react-test-renderer": "^16.8.1",
+    "del": "^4.1.0",
+    "ncp": "^2.0.0",
+    "puppeteer": "^1.14.0",
+    "react-scripts": "2.1.8",
+    "react-test-renderer": "^16.8.6",
+    "typescript": "3.4.3"
+  }
 }

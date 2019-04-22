@@ -1,0 +1,18 @@
+{
+  "common.button.back": "Zpět",
+  "language.switch": "Změnit jazyk",
+  "language.czech": "Česky",
+  "language.english": "Anglicky",
+  "modal.remove_note.title": "Odstranit poznámku",
+  "modal.remove_note.body": "Opravdu si přejete odstranit poznámku #{id}.",
+  "modal.remove_note.close": "Zrušit",
+  "modal.remove_note.remove": "Odstranit",
+  "notes.list.title": "Seznam poznámek",
+  "notes.list.edit": "Upravit poznámku",
+  "notes.list.remove": "Smazat poznámku",
+  "notes.list_table.columns.title": "Název",
+  "notes.form.title": "Název",
+  "notes.form.title_placeholder": "Název nové poznámky",
+  "notes.form.create": "Vytvořit",
+  "notes.create.title": "Vytvořit poznámku"
+}

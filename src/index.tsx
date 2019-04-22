@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+// import { addLocaleData } from 'react-intl';
+
+import { App } from './App';
 import * as serviceWorker from './serviceWorker';
+
+// import csLocaleData from 'react-intl/locale-data/cs';
+
+import './index.scss';
+
+// addLocaleData(csLocaleData);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

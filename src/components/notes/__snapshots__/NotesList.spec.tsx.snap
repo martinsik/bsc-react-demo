@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotesList should render table line for every array item 1`] = `
+<table
+  className="table table table-striped table-bordered table-hover"
+>
+  <thead>
+    <tr>
+      <th>
+        #
+      </th>
+      <th>
+        <span>
+          Title
+        </span>
+      </th>
+      <th />
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        1
+      </td>
+      <td>
+        <a
+          href="/note/1"
+          onClick={[Function]}
+        >
+          Title 1
+        </a>
+      </td>
+      <td />
+    </tr>
+    <tr>
+      <td>
+        2
+      </td>
+      <td>
+        <a
+          href="/note/2"
+          onClick={[Function]}
+        >
+          Title 2
+        </a>
+      </td>
+      <td />
+    </tr>
+    <tr>
+      <td>
+        3
+      </td>
+      <td>
+        <a
+          href="/note/3"
+          onClick={[Function]}
+        >
+          Title 3
+        </a>
+      </td>
+      <td />
+    </tr>
+  </tbody>
+</table>
+`;
