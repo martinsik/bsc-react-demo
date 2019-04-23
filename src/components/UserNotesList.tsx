@@ -1,5 +1,5 @@
 import React from 'react';
-import { tap } from 'rxjs/operators'
+import { finalize } from 'rxjs/operators'
 
 import { Loading } from './Loading';
 import { NotesList } from './notes/NotesList';
@@ -32,7 +32,7 @@ export const UserNotesList = () => {
       notes={response.data}
       onRemoveNote={note => removeNote(note.id)
         .pipe(
-          tap(() => reload()),
+          finalize(() => reload()),
         )
       }
     />
