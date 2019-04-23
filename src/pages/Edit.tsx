@@ -1,22 +1,21 @@
 import React  from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
+import { tap } from 'rxjs/operators';
 
-import { NoteForm } from '../components';
+import { NoteForm, Loading } from '../components';
 import { routes } from '../routes';
 import { useXhrEffect } from '../hooks/useXhrEffect';
 import { CreateEditNote, getNote, updateNote } from '../services/notes';
-import { Spinner } from 'react-bootstrap';
-import { tap } from 'rxjs/operators';
 
 const Component = (props: RouteComponentProps<{ id: string }>) => {
   const { history, match } = props;
   const noteId = match.params.id;
 
-  const response = useXhrEffect(getNote(Number(noteId)));
+  const [ response ] = useXhrEffect(getNote(Number(noteId)));
 
   if (!response) {
     return (
-      <Spinner animation="border" role="status" />
+      <Loading />
     );
   }
 

@@ -1,4 +1,4 @@
-## Running this app locally
+## Running app locally
 
 1. Clone this repo:
 
@@ -11,8 +11,14 @@ $ git clone https://github.com/martinsik/bsc-react-demo
 $ cd bsc-react-demo
 $ npm i
 ```
+
+4. Run tests:
+
+```
+$ npm run test
+```
    
-3. Start developement server:
+3. Start development server:
 
 ```
 $ npm run start

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Observable } from 'rxjs';
+import { tap } from 'rxjs/operators';
 import { Table, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
@@ -11,8 +12,6 @@ import FaEdit from 'react-icons/lib/fa/edit';
 import { Note } from '../../model/Note';
 import { RemoveNoteModal } from './RemoveNoteModal';
 import { createNoteDetailRoute, createNoteEditRoute } from '../../routes';
-
-import styles from './NotesList.module.scss'
 
 interface NotesListProps {
   notes: Note[];
@@ -65,7 +64,7 @@ export const NotesList = (props: NotesListProps) => {
 
   return (
     <>
-      <Table className={styles.table} striped bordered hover>
+      <Table striped bordered hover>
         <thead>
           <tr>
             <th>#</th>
@@ -90,7 +89,9 @@ export const NotesList = (props: NotesListProps) => {
         show={showModal}
         note={removeNote}
         onClose={() => setShowModal(false)}
-        onRemove={() => onRemoveNote(removeNote)}
+        onRemove={() => onRemoveNote(removeNote).pipe(
+          tap(() => setShowModal(false)),
+        )}
       />
     </>
   );

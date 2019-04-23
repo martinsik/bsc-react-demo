@@ -16,8 +16,20 @@ interface LocaleCache {
 
 const cache$ = new BehaviorSubject<LocaleCache>({});
 
+const createDynamicImport = (locale: string) => {
+  switch (locale) {
+    case 'cs':
+      // @ts-ignore
+      return import('../../node_modules/react-intl/locale-data/cs');
+    case 'en':
+    default:
+      // @ts-ignore
+      return import('../../node_modules/react-intl/locale-data/en');
+  }
+};
+
 const loadLocaleDataModule = (locale: string) => {
-  return from(import(`../../node_modules/react-intl/locale-data/${locale}`)).pipe(
+  return from(createDynamicImport(locale)).pipe(
     map(module => module.default),
   );
 };

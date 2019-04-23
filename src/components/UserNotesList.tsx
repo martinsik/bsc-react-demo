@@ -1,31 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { Spinner } from 'react-bootstrap';
+import React from 'react';
 import { tap } from 'rxjs/operators'
 
+import { Loading } from './Loading';
 import { NotesList } from './notes/NotesList';
 import { getAllNotes, removeNote } from '../services/notes';
+import { useXhrEffect } from '../hooks/useXhrEffect';
 
 export const UserNotesList = () => {
-  const [ response, setResponse ] = useState();
-
-  useEffect(() => {
-    if (response) {
-      return;
-    }
-
-    const subscription = getAllNotes().subscribe(response => {
-      setResponse(response);
-    });
-
-    return () => {
-      subscription.unsubscribe();
-    }
-  }, [response]);
-
+  const [ response, reload ] = useXhrEffect(getAllNotes());
 
   if (!response) {
     return (
-      <Spinner animation="border" role="status" />
+      <Loading />
     );
   }
 
@@ -46,7 +32,7 @@ export const UserNotesList = () => {
       notes={response.data}
       onRemoveNote={note => removeNote(note.id)
         .pipe(
-          tap(() => setResponse(null)),
+          tap(() => reload()),
         )
       }
     />

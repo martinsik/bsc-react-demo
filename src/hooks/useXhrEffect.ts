@@ -1,10 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Observable } from 'rxjs';
 
-import { XhrResponse } from '../services/xhr';
-import { Note } from '../model/Note';
-
-export const useXhrEffect = (action: Observable<any>): XhrResponse<Note> => {
+export const useXhrEffect = <T>(action: Observable<T>): [T, () => void] => {
   const [ response, setResponse ] = useState();
 
   useEffect(() => {
@@ -21,5 +18,7 @@ export const useXhrEffect = (action: Observable<any>): XhrResponse<Note> => {
     }
   }, [response]);
 
-  return response;
+  const reload = () => setResponse(null);
+
+  return [response, reload];
 };

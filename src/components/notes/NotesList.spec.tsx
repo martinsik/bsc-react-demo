@@ -42,7 +42,7 @@ describe('NotesList', () => {
         <NotesList notes={mockData} onRemoveNote={() => void 0} />
       </MockApp>
     ));
-    let tree = component.toJSON();
+    const tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();
   });

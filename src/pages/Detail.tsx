@@ -1,35 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router';
 
-import { BackButton, NoteDetail } from '../components';
-import { Spinner } from 'react-bootstrap';
+import { BackButton, NoteDetail, Loading } from '../components';
 import { getNote } from '../services/notes';
+import { useXhrEffect } from '../hooks/useXhrEffect';
 
 interface Props extends RouteComponentProps<{ id: string }> {
 }
 
 const Component = ({ match }: Props) => {
-  const [ response, setResponse ] = useState();
   const noteId = match.params.id;
 
-  useEffect(() => {
-    if (response) {
-      return;
-    }
-
-    const subscription = getNote(Number(noteId)).subscribe(response => {
-      setResponse(response);
-    });
-
-    return () => {
-      subscription.unsubscribe();
-    }
-  }, [response]);
-
+  const [ response ] = useXhrEffect(getNote(Number(noteId)));
 
   if (!response) {
     return (
-      <Spinner animation="border" role="status" />
+      <Loading />
     );
   }
 
