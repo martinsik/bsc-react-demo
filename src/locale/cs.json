@@ -15,5 +15,7 @@
   "notes.form.title_placeholder": "Název nové poznámky",
   "notes.form.create": "Vytvořit",
   "notes.create.title": "Vytvořit poznámku",
-  "notes.create.body": "Obsah poznámky"
+  "notes.create.body": "Obsah poznámky",
+  "new.key1": "PhraseApp test 1",
+  "new.key2": "PhraseApp test 2"
 }
