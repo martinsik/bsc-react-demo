@@ -13,6 +13,9 @@ phraseapp:
         locale_id: en
   pull:
     targets:
-    - file: ./src/locale/cs-pull.json
+    - file: ./src/locale/cs.json
+      params:
+        file_format: react_simple_json
+    - file: ./src/locale/en.json
       params:
         file_format: react_simple_json
