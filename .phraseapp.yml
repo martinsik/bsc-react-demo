@@ -1,0 +1,18 @@
+phraseapp:
+  access_token: 329cafc16792d37aa3b30514bb962346576774ce780c094d6bdaf76fa31ee3fd
+  project_id: f68ffe0594dfb46597b12e9074e449a1
+  push:
+    sources:
+    - file: ./src/locale/cs.json
+      params:
+        file_format: react_simple_json
+        locale_id: cs
+    - file: ./src/locale/en.json
+      params:
+        file_format: react_simple_json
+        locale_id: en
+  pull:
+    targets:
+    - file: ./src/locale/cs-pull.json
+      params:
+        file_format: react_simple_json

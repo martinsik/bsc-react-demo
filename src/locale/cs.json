@@ -14,5 +14,6 @@
   "notes.form.title": "Název",
   "notes.form.title_placeholder": "Název nové poznámky",
   "notes.form.create": "Vytvořit",
-  "notes.create.title": "Vytvořit poznámku"
+  "notes.create.title": "Vytvořit poznámku",
+  "notes.create.body": "Obsah poznámky"
 }
