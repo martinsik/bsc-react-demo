@@ -1,0 +1,23 @@
+{
+    "common.button.back": "Back",
+    "language.switch": "Switch language",
+    "language.czech": "Czech",
+    "language.english": "English",
+    "modal.remove_note.title": "Remove Note",
+    "modal.remove_note.body": "Are you sure you want to remove note #{id}.",
+    "modal.remove_note.close": "Close",
+    "modal.remove_note.remove": "Remove",
+    "notes.list.title": "List of notes",
+    "notes.list.edit": "Edit note",
+    "notes.list.remove": "Remove note",
+    "notes.list_table.columns.title": "Title",
+    "notes.form.title": "Title",
+    "notes.form.title_placeholder": "New note title",
+    "notes.form.create": "Create",
+    "notes.create.title": "Create a new note",
+    "new.key3": "PhraseApp test 3",
+    "notes.create.body": "",
+    "new.key1": "",
+    "new.key2": "PhraseApp test 2",
+    "new.key4": "PhraseApp test 4"
+}
