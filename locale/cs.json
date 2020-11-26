@@ -1,0 +1,65 @@
+{
+    "common.button.back": {
+        "translation": "Zpět"
+    },
+    "language.switch": {
+        "translation": "Změnit jazyk"
+    },
+    "language.czech": {
+        "translation": "Česky"
+    },
+    "language.english": {
+        "translation": "Anglicky"
+    },
+    "modal.remove_note.title": {
+        "translation": "Odstranit poznámku"
+    },
+    "modal.remove_note.body": {
+        "translation": "Opravdu si přejete odstranit poznámku #{id}."
+    },
+    "modal.remove_note.close": {
+        "translation": "Zrušit"
+    },
+    "modal.remove_note.remove": {
+        "translation": "Odstranit"
+    },
+    "notes.list.title": {
+        "translation": "Seznam poznámek"
+    },
+    "notes.list.edit": {
+        "translation": "Upravit poznámku"
+    },
+    "notes.list.remove": {
+        "translation": "Smazat poznámku"
+    },
+    "notes.list_table.columns.title": {
+        "translation": "Název"
+    },
+    "notes.form.title": {
+        "translation": "Název"
+    },
+    "notes.form.title_placeholder": {
+        "translation": "Název nové poznámky"
+    },
+    "notes.form.create": {
+        "translation": "Vytvořit"
+    },
+    "notes.create.title": {
+        "translation": "Vytvořit poznámku"
+    },
+    "new.key3": {
+        "translation": ""
+    },
+    "notes.create.body": {
+        "translation": "Obsah poznámky"
+    },
+    "new.key1": {
+        "translation": "PhraseApp test 1"
+    },
+    "new.key2": {
+        "translation": "PhraseApp test 2"
+    },
+    "new.key4": {
+        "translation": "PhraseApp test 4"
+    }
+}
