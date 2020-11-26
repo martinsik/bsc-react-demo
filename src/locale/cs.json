@@ -1,22 +1,65 @@
 {
-  "common.button.back": "Zpět",
-  "language.switch": "Změnit jazyk",
-  "language.czech": "Česky",
-  "language.english": "Anglicky",
-  "modal.remove_note.title": "Odstranit poznámku",
-  "modal.remove_note.body": "Opravdu si přejete odstranit poznámku #{id}.",
-  "modal.remove_note.close": "Zrušit",
-  "modal.remove_note.remove": "Odstranit",
-  "notes.list.title": "Seznam poznámek",
-  "notes.list.edit": "Upravit poznámku",
-  "notes.list.remove": "Smazat poznámku",
-  "notes.list_table.columns.title": "Název",
-  "notes.form.title": "Název",
-  "notes.form.title_placeholder": "Název nové poznámky",
-  "notes.form.create": "Vytvořit",
-  "notes.create.title": "Vytvořit poznámku",
-  "notes.create.body": "Obsah poznámky",
-  "new.key1": "PhraseApp test 1",
-  "new.key2": "PhraseApp test 2",
-  "new.key4": "PhraseApp test 4"
+    "common.button.back": {
+        "translation": "Zpět"
+    },
+    "language.switch": {
+        "translation": "Změnit jazyk"
+    },
+    "language.czech": {
+        "translation": "Česky"
+    },
+    "language.english": {
+        "translation": "Anglicky"
+    },
+    "modal.remove_note.title": {
+        "translation": "Odstranit poznámku"
+    },
+    "modal.remove_note.body": {
+        "translation": "Opravdu si přejete odstranit poznámku #{id}."
+    },
+    "modal.remove_note.close": {
+        "translation": "Zrušit"
+    },
+    "modal.remove_note.remove": {
+        "translation": "Odstranit"
+    },
+    "notes.list.title": {
+        "translation": "Seznam poznámek"
+    },
+    "notes.list.edit": {
+        "translation": "Upravit poznámku"
+    },
+    "notes.list.remove": {
+        "translation": "Smazat poznámku"
+    },
+    "notes.list_table.columns.title": {
+        "translation": "Název"
+    },
+    "notes.form.title": {
+        "translation": "Název"
+    },
+    "notes.form.title_placeholder": {
+        "translation": "Název nové poznámky"
+    },
+    "notes.form.create": {
+        "translation": "Vytvořit"
+    },
+    "notes.create.title": {
+        "translation": "Vytvořit poznámku"
+    },
+    "new.key3": {
+        "translation": ""
+    },
+    "notes.create.body": {
+        "translation": "Obsah poznámky"
+    },
+    "new.key1": {
+        "translation": "PhraseApp test 1"
+    },
+    "new.key2": {
+        "translation": "PhraseApp test 2"
+    },
+    "new.key4": {
+        "translation": "PhraseApp test 4"
+    }
 }

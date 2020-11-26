@@ -1,19 +1,65 @@
 {
-  "common.button.back": "Back",
-  "language.switch": "Switch language",
-  "language.czech": "Czech",
-  "language.english": "English",
-  "modal.remove_note.title": "Remove Note",
-  "modal.remove_note.body": "Are you sure you want to remove note #{id}.",
-  "modal.remove_note.close": "Close",
-  "modal.remove_note.remove": "Remove",
-  "notes.list.title": "List of notes",
-  "notes.list.edit": "Edit note",
-  "notes.list.remove": "Remove note",
-  "notes.list_table.columns.title": "Title",
-  "notes.form.title": "Title",
-  "notes.form.title_placeholder": "New note title",
-  "notes.form.create": "Create",
-  "notes.create.title": "Create a new note",
-  "new.key3": "PhraseApp test 3"
+    "common.button.back": {
+        "translation": "Back"
+    },
+    "language.switch": {
+        "translation": "Switch language"
+    },
+    "language.czech": {
+        "translation": "Czech"
+    },
+    "language.english": {
+        "translation": "English"
+    },
+    "modal.remove_note.title": {
+        "translation": "Remove Note"
+    },
+    "modal.remove_note.body": {
+        "translation": "Are you sure you want to remove note #{id}."
+    },
+    "modal.remove_note.close": {
+        "translation": "Close"
+    },
+    "modal.remove_note.remove": {
+        "translation": "Remove"
+    },
+    "notes.list.title": {
+        "translation": "List of notes"
+    },
+    "notes.list.edit": {
+        "translation": "Edit note"
+    },
+    "notes.list.remove": {
+        "translation": "Remove note"
+    },
+    "notes.list_table.columns.title": {
+        "translation": "Title"
+    },
+    "notes.form.title": {
+        "translation": "Title"
+    },
+    "notes.form.title_placeholder": {
+        "translation": "New note title"
+    },
+    "notes.form.create": {
+        "translation": "Create"
+    },
+    "notes.create.title": {
+        "translation": "Create a new note"
+    },
+    "new.key3": {
+        "translation": "PhraseApp test 3"
+    },
+    "notes.create.body": {
+        "translation": ""
+    },
+    "new.key1": {
+        "translation": ""
+    },
+    "new.key2": {
+        "translation": "PhraseApp test 2"
+    },
+    "new.key4": {
+        "translation": "PhraseApp test 4"
+    }
 }
